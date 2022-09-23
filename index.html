@@ -9,26 +9,29 @@
     <script src="https://kit.fontawesome.com/17be9efc7d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="containerShppingListInput">
-        <p>Shopping List</p>
-
-        <input type="text" id="shoppingListInput" class="input">
-        <button id="addToListButton"><span><i class="fa-solid fa-angles-down"></i> Add to list</span></button>
+    <div id="shpping-list-input-container">
+        <h3>Shopping List</h3>
+        <input type="text" id="shopping-list-input" class="input">
+        <button id="add-to-list-button"><span><i class="fa-solid fa-angles-down"></i> Add to list</span></button>
     </div>
 
-    <div id="containerShoppingListDisplay">
+    <div id="resctrictions-container">
+        <p class="notes"><i>Resctrictions: no numbers and plurals (i.e. sauces) in the shopping list.</i></p>
+    </div>
+
+    <div id="alert-inactive"></div>
+
+    <div id="shopping-list-display-container">
         <!--Shopping list-->
     </div>
 
-    <div id="generateButtonDiv">
+    <div id="generate-button-container">
         <p>Click the Generate button to explore recipes ideas based on you shopping list.</p>
-        <p id="notes"><i>You at least 10 items on your shopping list to use the Generate button. </i></p>
-        <button id="generateButton">Generate</button>
+        <p class="notes"><i>You at need least 10 items on your shopping list to use the Generate button. </i></p>
+        <button id="generate-button" class="generate-button-inactive">Generate</button>
     </div>
 
-    <div id="recipesContainer"></div>
-
-
-    <script src="code.js"></script>
+    <div id="recipes-container"></div>
+    <script src="index.js"></script>
 </body>
 </html>
